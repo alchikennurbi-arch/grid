@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: grid;
+        place-content: center;
+        min-height: 100vh;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        background-color: rgb(241, 200, 150);
+      }
+      .container {
+        display: grid;
+        width: 1000px;
+        height: 700px;
+        background-color: rgb(241, 239, 239);
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+        gap: 20px;
+        padding: 50px;
+      }
+      .box1 {
+        display: grid;
+        grid-row: 1/7;
+        grid-column: 1/2;
+        background-color: bisque;
+        border-radius: 10px;
+      }
+      .box2 {
+        display: grid;
+        grid-row: 1/5;
+        grid-column: 2/4;
+        background-color: blueviolet;
+        border-radius: 10px;
+      }
+      .box3 {
+        display: grid;
+        grid-row: 1/9;
+        grid-column: 4/5;
+        background-color: rgb(210, 168, 248);
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      .box4 {
+        display: grid;
+        grid-row: 7/13;
+        grid-column: 1/2;
+        background-color: rgb(255, 217, 0);
+        border-radius: 10px;
+      }
+      .box5 {
+        display: grid;
+        grid-row: 5/9;
+        grid-column: 2/3;
+        background-color: white;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      .box6 {
+        display: grid;
+        grid-row: 9/13;
+        grid-column: 2/3;
+        background-color: white;
+        border-radius: 10px;
+      }
+      .box7 {
+        display: grid;
+        grid-row: 5/9;
+        grid-column: 3/4;
+        background-color: rgb(255, 217, 0);
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      .box8 {
+        display: grid;
+        grid-row: 9/13;
+        grid-column: 3/5;
+        background-color: blueviolet;
+        border-radius: 10px;
+      }
+      .first {
+        font-size: 30px;
+        margin-left: 20px;
+        margin-top: 50px;
+        margin-bottom: -100px;
+      }
+      .quick {
+        color: blueviolet;
+        font-size: 30px;
+        margin-left: 20px;
+        margin-top: 90px;
+      }
+      .create {
+        width: 180px;
+        height: 80px;
+        margin-top: 0px;
+        margin-bottom: 70px;
+        margin-left: 20px;
+      }
+      .social {
+        font-size: 50px;
+        line-height: 40px;
+        color: white;
+        margin-left: 20px;
+        margin-top: 20px;
+        text-align: center;
+      }
+      .stars {
+        margin-left: 130px;
+        width: 210px;
+        height: 30px;
+        margin-top: -70px;
+        margin-bottom: 0px;
+      }
+      .over {
+        font-size: 18px;
+        color: white;
+        margin-left: 130px;
+        margin-top: -40px;
+      }
+
+      .to {
+        margin-left: 20px;
+        margin-top: 40px;
+        font-size: 30px;
+        line-height: 20px;
+      }
+      .best {
+        width: 305px;
+        height: 250px;
+        margin-left: 40px;
+        margin-top: -20px;
+      }
+      .opp {
+        margin-left: 40px;
+      }
+      .your {
+        font-size: 30px;
+        margin-left: 20px;
+        line-height: 30px;
+      }
+      .third {
+        display: flex;
+        margin-left: 20px;
+        margin-top: -30px;
+        width: 200px;
+        height: 200px;
+      }
+      .five {
+        width: 260px;
+        height: 60px;
+        margin-left: 30px;
+      }
+      .manage {
+        font-size: 30px;
+        margin-left: 30px;
+        line-height: 30px;
+        margin-top: 0px;
+      }
+      .main {
+        font-size: 30px;
+        margin-left: 30px;
+        line-height: 30px;
+        margin-top: 18px;
+      }
+      .august {
+        width: 180px;
+        height: 160px;
+        margin-top: -30px;
+        margin-left: 20px;
+      }
+      .number {
+        font-size: 50px;
+        margin-left: 30px;
+        margin-top: 10px;
+        margin-bottom: -40px;
+      }
+      .gr {
+        margin-left: 30px;
+        margin-top: 10px;
+      }
+      .au {
+        width: 140px;
+        height: 50px;
+        margin-left: 30px;
+      }
+      .follow {
+        width: 210px;
+        height: 190px;
+        margin-left: 30px;
+        color: white;
+        margin-left: 20px;
+        margin-top: 20px;
+      }
+      .with {
+        color: white;
+        font-size: 30px;
+        margin-left: 250px;
+        margin-top: -150px;
+        line-height: 30px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="box1">
+        <p class="first">
+          <b>
+            Create and <br />
+            schedule <br />
+            content <br />
+          </b>
+        </p>
+
+        <p class="quick"><b>quicker.</b></p>
+        <img class="create" src="assets/images/illustration-create-post.webp" />
+      </div>
+      <div class="box2">
+        <p class="social">
+          Social Media 10x <br />
+          Faster with Al
+        </p>
+        <img class="stars" src="assets/images/illustration-five-stars.webp" />
+        <p class="over">Over 4,000 5-star reviews</p>
+      </div>
+      <div class="box3">
+        <p class="to">Schedule to <br />social media.</p>
+        <img
+          class="best"
+          src="assets/images/illustration-schedule-posts.webp"
+        />
+        <p class="opp">
+          Optimize post timings <br />
+          to publish content at <br />
+          the perfect time for <br />
+          your audience.
+        </p>
+      </div>
+
+      <div class="box4">
+        <p class="your">
+          Write your <br />
+          content <br />using Al.
+        </p>
+        <img class="third" src="assets/images/illustration-ai-content.webp" />
+      </div>
+      <div class="box5">
+        <img
+          class="five"
+          src="assets/images/illustration-multiple-platforms.webp"
+        />
+        <p class="manage">
+          Manage <br />multiple <br />
+          accounts and <br />platforms.
+        </p>
+      </div>
+      <div class="box6">
+        <p class="number">>56%</p>
+        <p class="gr">faster audience growth</p>
+        <img class="au" src="assets/images/illustration-audience-growth.webp" />
+      </div>
+      <div class="box7">
+        <p class="main">
+          Maintain a <br />consistent <br />posting <br />schedule.
+        </p>
+        <img
+          class="august"
+          src="assets/images/illustration-consistent-schedule.webp"
+        />
+      </div>
+      <div class="box8">
+        <img
+          class="follow"
+          src="assets/images/illustration-grow-followers.webp"
+        />
+        <p class="with">
+          Grow followers <br />
+          with non-stop <br />
+          content.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
